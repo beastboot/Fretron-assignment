@@ -19,10 +19,10 @@ bool is_valid_move(const Point& start, const Point& end, const set<Point>& board
     if (end == start || board.find(end) == board.end()) {
         return false;
     }
-    if (start.x != end.x) {  // Can only move horizontally
+    if (start.x != end.x) {  
         return false;
     }
-    if (start.y == end.y) {  // Cannot move to the same column
+    if (start.y == end.y) {  
         return false;
     }
     return true;
